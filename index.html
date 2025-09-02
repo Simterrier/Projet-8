@@ -52,6 +52,22 @@
           <a href="#stack">Stack & outils</a>
           <a href="#contact">Contact</a>
         </nav>
+        <!-- Avatar dans l'en-tête -->
+        <div class="avatar-wrap" aria-hidden="false">
+          <picture>
+            <!-- si tu exportes une version webp, garde cette source (sinon tu peux l'enlever) -->
+
+            <img
+              src="./assets/images/moi.jpg"
+              width="128"
+              height="128"
+              alt="Portrait de Simon Terrier"
+              class="avatar"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
       </div>
     </header>
 
@@ -226,18 +242,20 @@
                 <li>Validation W3C</li>
               </ul>
 
-              <!-- Lien ajouté, rien d'autre modifié -->
-              <a class="btn" href="https://simterrier.github.io/JuraSix/"
-                >Voir en ligne</a
-              >
-
-              <a
-                class="btn btn--link"
-                href="https://github.com/Simterrier/JuraSix"
-                >Code</a
-              >
+              <!-- FIX: on entoure les boutons avec .card__actions -->
+              <div class="card__actions">
+                <a class="btn" href="https://simterrier.github.io/JuraSix/"
+                  >Voir en ligne</a
+                >
+                <a
+                  class="btn btn--link"
+                  href="https://github.com/Simterrier/JuraSix"
+                  >Code</a
+                >
+              </div>
             </div>
           </article>
+
           <!-- GOONIES -->
           <article class="card">
             <figure class="card__media">
@@ -316,6 +334,31 @@
           <li>
             <img src="/assets/icons/lighthouse.svg" alt="" aria-hidden="true" />
             Lighthouse / SEO / A11y
+          </li>
+        </ul>
+      </section>
+
+      <!-- DIPLÔMES -->
+      <section id="diplomes" class="section container">
+        <h2>Mes diplômes</h2>
+        <ul class="diplomas">
+          <li>
+            <img
+              class="icon"
+              src="/assets/icons/certificate.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <strong>DAEU-A</strong> — Université de Bordeaux
+          </li>
+          <li>
+            <img
+              class="icon"
+              src="/assets/icons/certificate.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <strong>Développeur Web</strong> — OpenClassrooms
           </li>
         </ul>
       </section>
