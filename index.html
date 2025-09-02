@@ -1,9 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simon Terrier — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Simon Terrier : intégration HTML/CSS, JavaScript, React, Node/Express, MongoDB, SEO & accessibilité."
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio — Simon Terrier" />
+    <meta
+      property="og:description"
+      content="Sites rapides, accessibles et bien référencés."
+    />
+    <meta property="og:image" content="/assets/images/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Schema.org Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Simon Terrier",
+        "jobTitle": "Développeur web",
+        "url": "https://simterrier.github.io/projet-8/",
+        "sameAs": [
+          "https://github.com/Simterrier",
+          "https://www.linkedin.com/in/simon-terrier-b9951b353/"
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <h1 class="logo" aria-label="Portfolio de Simon Terrier">
+          Simon <span>Terrier</span>
+        </h1>
+        <!-- Ajoute une vraie image si tu veux un avatar/logo -->
+        <!-- <img src="/assets/images/avatar.jpg" alt="Portrait de Simon Terrier" class="avatar"> -->
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="#presentation">Présentation</a>
+          <a href="#projets">Projets</a>
+          <a href="#stack">Stack & outils</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- PRÉSENTATION -->
+      <section id="presentation" class="section container">
+        <h2>Présentation</h2>
+        <p>
+          Bonjour et bienvenue sur mon site ! Je m’appelle
+          <strong>Simon</strong> et je suis <strong>développeur web</strong>.
+          Après un bilan de compétences — et déjà attiré par le monde du web —
+          j’ai choisi de me reconvertir dans ce domaine. Devenue une vraie
+          passion, cette formation m’a permis de créer mes premiers sites et
+          applications que vous pouvez découvrir ci-dessous.
+        </p>
+      </section>
+
+      <!-- PROJETS -->
+      <section id="projets" class="section container">
+        <h2>Mes sites et applications</h2>
+
+        <h3>Projets du parcours de formation</h3>
+        <div class="cards">
+          <!-- BOOKI (P2) -->
+          <article class="card">
+            <figure class="card__media">
+              <img src="/assets/images/Booki.png" alt="Capture du site Booki" />
+            </figure>
+            <div class="card__body">
+              <h4>Booki (Projet 2)</h4>
+              <p class="card__desc">
+                Intégration d’une maquette responsive pour un site de
+                réservation.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>HTML sémantique</li>
+                <li>CSS (Flexbox / Grid)</li>
+                <li>Responsive (1440 px / 375 px)</li>
+                <li>Bonnes pratiques accessibilité (structure, alt)</li>
+              </ul>
+              <!-- <a class="btn" href="LIEN_DEMO">Voir en ligne</a> -->
+              <!-- <a class="btn btn--link" href="LIEN_REPO">Code</a> -->
+            </div>
+          </article>
+
+          <!-- SOPHIE BLUEL (P3) -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/SophieBluel.png"
+                alt="Capture du site Sophie Bluel"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>Sophie Bluel (Projet 3)</h4>
+              <p class="card__desc">
+                Galerie dynamique et interface d’admin (ajout/suppression) côté
+                front.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>JavaScript (DOM, events, modules)</li>
+                <li>Fetch API / appels HTTP</li>
+                <li>FormData / Upload d’images</li>
+                <li>Gestion de token (auth) côté front</li>
+                <li>Accessibilité (ARIA pour la modale)</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- NINA CARDUCCI (P4) -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/NinaCarducci.png"
+                alt="Capture du site Nina Carducci"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>Nina Carducci (Projet 4)</h4>
+              <p class="card__desc">
+                Optimisation performance/SEO/accessibilité et correction de
+                bugs.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>Audit Lighthouse & corrections</li>
+                <li>Compression d’images / lazy-loading</li>
+                <li>Balises meta (Open Graph, Twitter Card)</li>
+                <li>Schema.org (données structurées)</li>
+                <li>Validation W3C HTML/CSS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- KASA (P5) -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/Kasa.png"
+                alt="Capture de l’application Kasa"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>Kasa (Projet 5)</h4>
+              <p class="card__desc">
+                Application front en <strong>React</strong> (SPA) : routing,
+                composants et états.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>React + Vite</li>
+                <li>React Router</li>
+                <li>
+                  Composants réutilisables (Card, Banner, Accordion, Carousel)
+                </li>
+                <li>Gestion d’état & props</li>
+                <li>Architecture de fichiers & conventions</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- MON VIEUX GRIMOIRE (P6) -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/MVG.png"
+                alt="Capture de l’API Mon Vieux Grimoire"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>Mon Vieux Grimoire (Projet 6)</h4>
+              <p class="card__desc">
+                API Node/Express avec gestion d’authentification et stockage
+                d’images.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>Node.js / Express</li>
+                <li>MongoDB / Mongoose</li>
+                <li>Auth JWT / bcrypt</li>
+                <li>Multer (upload), gestion des fichiers images</li>
+                <li>Architecture MVC, contrôleurs & middleware</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <h3>Projets personnels</h3>
+        <div class="cards">
+          <!-- JURASIX -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/JuraSix.png"
+                alt="Capture du site JuraSix"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>JuraSix</h4>
+              <p class="card__desc">
+                Site vitrine HTML/CSS optimisé et responsive (déployé sur GitHub
+                Pages).
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>HTML sémantique</li>
+                <li>CSS (Grid/Flex), responsive 1440/375</li>
+                <li>SEO (balises meta, OG/Twitter)</li>
+                <li>Accessibilité (contrastes, focus, structure)</li>
+                <li>Validation W3C</li>
+              </ul>
+
+              <!-- Lien ajouté, rien d'autre modifié -->
+              <a class="btn" href="https://simterrier.github.io/JuraSix/"
+                >Voir en ligne</a
+              >
+
+              <a
+                class="btn btn--link"
+                href="https://github.com/Simterrier/JuraSix"
+                >Code</a
+              >
+            </div>
+          </article>
+          <!-- GOONIES -->
+          <article class="card">
+            <figure class="card__media">
+              <img
+                src="/assets/images/Goonies.png"
+                alt="Capture de l’app Goonies"
+              />
+            </figure>
+            <div class="card__body">
+              <h4>Goonies</h4>
+              <p class="card__desc">
+                Application full-stack (prod en ligne) : profils membres,
+                galerie, événements avec compte à rebours.
+              </p>
+              <p class="card__skills-title">Compétences & techno :</p>
+              <ul class="skills">
+                <li>Front : React + Vite, React Router</li>
+                <li>Back : Node/Express</li>
+                <li>Base de données : MongoDB Atlas</li>
+                <li>Médias : Cloudinary (upload & transformations)</li>
+                <li>Déploiement : GitHub Pages (front) + Render (API)</li>
+                <li>
+                  Auth (whitelist admin), formulaires, pagination, recherche
+                </li>
+              </ul>
+              <div class="card__actions">
+                <a class="btn" href="https://loupingg.github.io/Goonies/"
+                  >Voir en ligne</a
+                >
+                <a
+                  class="btn btn--link"
+                  href="https://github.com/LouPingg/Goonies"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- STACK & OUTILS -->
+      <section id="stack" class="section container">
+        <h2>Logiciels & technologies</h2>
+        <ul class="tech-list">
+          <li>
+            <img src="/assets/icons/html.svg" alt="" aria-hidden="true" /> HTML5
+          </li>
+          <li>
+            <img src="/assets/icons/css.svg" alt="" aria-hidden="true" /> CSS3
+            (Flexbox, Grid)
+          </li>
+          <li>
+            <img src="/assets/icons/js.svg" alt="" aria-hidden="true" />
+            JavaScript (ES modules, Fetch API)
+          </li>
+          <li>
+            <img src="/assets/icons/react.svg" alt="" aria-hidden="true" />
+            React (Vite, Router)
+          </li>
+          <li>
+            <img src="/assets/icons/node.svg" alt="" aria-hidden="true" />
+            Node.js / Express
+          </li>
+          <li>
+            <img src="/assets/icons/mongo.svg" alt="" aria-hidden="true" />
+            MongoDB / Mongoose
+          </li>
+          <li>
+            <img src="/assets/icons/cloudinary.svg" alt="" aria-hidden="true" />
+            Cloudinary
+          </li>
+          <li>
+            <img src="/assets/icons/github.svg" alt="" aria-hidden="true" /> Git
+            & GitHub
+          </li>
+          <li>
+            <img src="/assets/icons/lighthouse.svg" alt="" aria-hidden="true" />
+            Lighthouse / SEO / A11y
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section container">
+        <h2>Où me retrouver&nbsp;?</h2>
+        <p class="contact__links">
+          <a
+            href="https://github.com/Simterrier"
+            aria-label="GitHub de Simon Terrier"
+          >
+            <img src="/assets/icons/github.svg" alt="" aria-hidden="true" />
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/simon-terrier-b9951b353/"
+            aria-label="LinkedIn de Simon Terrier"
+          >
+            <img src="/assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+            LinkedIn
+          </a>
+          <a
+            href="mailto:simon.terrier@hotmail.fr"
+            aria-label="Envoyer un email à Simon Terrier"
+          >
+            <img src="/assets/icons/mail.svg" alt="" aria-hidden="true" />
+            simon.terrier@hotmail.fr
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025 — Simon Terrier</div>
+    </footer>
+  </body>
 </html>
