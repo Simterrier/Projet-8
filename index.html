@@ -35,6 +35,7 @@
     </script>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
@@ -44,19 +45,14 @@
         <h1 class="logo" aria-label="Portfolio de Simon Terrier">
           Simon <span>Terrier</span>
         </h1>
-        <!-- Ajoute une vraie image si tu veux un avatar/logo -->
-        <!-- <img src="/assets/images/avatar.jpg" alt="Portrait de Simon Terrier" class="avatar"> -->
         <nav class="site-nav" aria-label="Navigation principale">
           <a href="#presentation">Présentation</a>
           <a href="#projets">Projets</a>
           <a href="#stack">Stack & outils</a>
           <a href="#contact">Contact</a>
         </nav>
-        <!-- Avatar dans l'en-tête -->
         <div class="avatar-wrap" aria-hidden="false">
           <picture>
-            <!-- si tu exportes une version webp, garde cette source (sinon tu peux l'enlever) -->
-
             <img
               src="./assets/images/moi.jpg"
               width="128"
@@ -72,7 +68,6 @@
     </header>
 
     <main id="main">
-      <!-- PRÉSENTATION -->
       <section id="presentation" class="section container">
         <h2>Présentation</h2>
         <p>
@@ -85,13 +80,11 @@
         </p>
       </section>
 
-      <!-- PROJETS -->
       <section id="projets" class="section container">
         <h2>Mes sites et applications</h2>
 
         <h3>Projets du parcours de formation</h3>
         <div class="cards">
-          <!-- BOOKI (P2) -->
           <article class="card">
             <figure class="card__media">
               <img src="/assets/images/Booki.png" alt="Capture du site Booki" />
@@ -109,12 +102,9 @@
                 <li>Responsive (1440 px / 375 px)</li>
                 <li>Bonnes pratiques accessibilité (structure, alt)</li>
               </ul>
-              <!-- <a class="btn" href="LIEN_DEMO">Voir en ligne</a> -->
-              <!-- <a class="btn btn--link" href="LIEN_REPO">Code</a> -->
             </div>
           </article>
 
-          <!-- SOPHIE BLUEL (P3) -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -139,7 +129,6 @@
             </div>
           </article>
 
-          <!-- NINA CARDUCCI (P4) -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -164,7 +153,6 @@
             </div>
           </article>
 
-          <!-- KASA (P5) -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -191,7 +179,6 @@
             </div>
           </article>
 
-          <!-- MON VIEUX GRIMOIRE (P6) -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -219,7 +206,6 @@
 
         <h3>Projets personnels</h3>
         <div class="cards">
-          <!-- JURASIX -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -241,8 +227,6 @@
                 <li>Accessibilité (contrastes, focus, structure)</li>
                 <li>Validation W3C</li>
               </ul>
-
-              <!-- FIX: on entoure les boutons avec .card__actions -->
               <div class="card__actions">
                 <a class="btn" href="https://simterrier.github.io/JuraSix/"
                   >Voir en ligne</a
@@ -256,7 +240,6 @@
             </div>
           </article>
 
-          <!-- GOONIES -->
           <article class="card">
             <figure class="card__media">
               <img
@@ -296,7 +279,6 @@
         </div>
       </section>
 
-      <!-- STACK & OUTILS -->
       <section id="stack" class="section container">
         <h2>Logiciels & technologies</h2>
         <ul class="tech-list">
@@ -338,7 +320,6 @@
         </ul>
       </section>
 
-      <!-- DIPLÔMES -->
       <section id="diplomes" class="section container">
         <h2>Mes diplômes</h2>
         <ul class="diplomas">
@@ -363,7 +344,6 @@
         </ul>
       </section>
 
-      <!-- CONTACT -->
       <section id="contact" class="section container">
         <h2>Où me retrouver&nbsp;?</h2>
         <p class="contact__links">

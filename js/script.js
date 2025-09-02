@@ -1,3 +1,4 @@
+// Nav active selon la section visible
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".site-nav a");
 
@@ -9,12 +10,11 @@ window.addEventListener("scroll", () => {
   });
   navLinks.forEach((a) => {
     a.classList.remove("active");
-    if (a.getAttribute("href") === "#" + current) {
-      a.classList.add("active");
-    }
+    if (a.getAttribute("href") === "#" + current) a.classList.add("active");
   });
 });
 
+// Fade-in au scroll
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
