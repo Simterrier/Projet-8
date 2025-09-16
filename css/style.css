@@ -38,6 +38,7 @@ p{ color: var(--muted); margin: 0 0 var(--space-3); }
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 10px;
   align-items: stretch;
+  padding: 20px;
 }
 
 .card__media{
@@ -84,6 +85,7 @@ p{ color: var(--muted); margin: 0 0 var(--space-3); }
 .diplomas{
   list-style:none; padding-left:0; margin:0;
   display:flex; flex-direction:column; gap:12px;
+  padding: 20px;
 }
 .diplomas li{
   display:flex; align-items:center; gap:10px;
@@ -148,14 +150,18 @@ body { background: linear-gradient(to bottom, #dad7d736, #dad7d7); }
 .card__media img { transition: transform .4s ease, filter .4s ease; }
 .card:hover .card__media img { transform: scale(1.05); filter: brightness(1.05); }
 
-section#projets { background-color: #D3D6D8; }
-section#diplomes { background-color: #D3D6D8; }
+section#projets { background-color: #D3D6D8; border-radius: 20px; padding-top: 0px; overflow: hidden; }
+section#diplomes { background-color: #D3D6D8; border-radius: 20px; padding-top: 0px; overflow: hidden;}
 section#projets p,
 section#diplomes p,
 section#projets .card__desc,
 section#diplomes .card__desc{ color:#374151; }
 section#projets h2,
-section#diplomes h2{ color:#111; }
+section#diplomes h2{ color:#111;  }
+
+
+
+
 
 .fade-in { animation: fadeInUp .6s ease forwards; }
 @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
